@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Chewy&display=swap');
+
+
+body {
+    font-family: 'Baloo 2', cursive;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaperaccess.com/full/9394088.jpg');
+    background-size: cover;
+    background-position: fixed;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* PROFILE SECTION */
+.Profile {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        border: 5px solid rgb(0, 117, 82);
+    }
+}
+
+
+/* EDUCATIONAL BACKGROUND SECTION */
+.Education_section {
+    background-color: #f0f0f0;
+    padding: 2%;
+    margin: 5% 0;
+    border-radius: 10px;
+
+    .card-container {
+        display: flex;              
+        gap: 1rem;                  
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .card {
+        flex: 0 0 auto;             
+        width: 20%;
+        height: 14%;
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+    }
+}
+
+
+/* PROJECTS SECTION */
+.Projects_section {
+    background-color: #e0e0e0;
+    padding: 2%;
+    margin: 5% 0;
+}
