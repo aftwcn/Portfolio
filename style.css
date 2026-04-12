@@ -76,6 +76,12 @@ html, body {
     margin-bottom: 10%;
     font-size: 8px;
     font-style: italic;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
 }
 
 /* PROFILE SECTION */
@@ -83,10 +89,10 @@ html, body {
     background-color: rgba(123,123,123,0.3);
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
-
+    margin-top: 50px;
     text-align: center;
     padding: 2%;
-    img {
+    .pfp {
         width: 100px;
         height: 100px;
         border-radius: 40%;
@@ -98,7 +104,22 @@ html, body {
     }
 }
 
-.details {
+.contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+.contacts a img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px
+}
+
+/* .details {
     background-color: rgba(123,123,123,0.3);
     border-radius: 10px 10px 50% 50%;
     text-align: center;
@@ -106,7 +127,13 @@ html, body {
     margin: 2% 0;
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
 
-}
+} */
+
+
+
+
+
+
 
 
 
