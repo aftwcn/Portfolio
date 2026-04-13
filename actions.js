@@ -2,7 +2,7 @@ const img = document.querySelector('.pfp');
 const img1 = 'pfp.png'
 const img2 = 'pfp2.gif'
 
-img.addEventListener('mouseover', () => {
+img.addEventListener('click', () => {
     img.src = img2 + "?t=" + Date.now();
 
 });
