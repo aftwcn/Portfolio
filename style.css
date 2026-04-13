@@ -5,7 +5,7 @@
 
 html, body {
     font-family: 'Baloo 2', cursive;
-    height: 100%; 
+    height: 100vh; 
     margin: 0;
     padding: 0; 
     color: whitesmoke;
@@ -73,14 +73,13 @@ html, body {
     background-color: #2949009a;
     text-align: center;
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     font-size: 8px;
     font-style: italic;
-    position: fixed;
+    position: relative; 
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
 
 }
 
@@ -89,7 +88,7 @@ html, body {
     background-color: rgba(123,123,123,0.3);
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
-    margin-top: 50px;
+    margin: 5%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -99,8 +98,8 @@ html, body {
         width: 100px;
         height: 100px;
         border-radius: 40%;
-        border: 5px solid rgb(84, 211, 0);
-        box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
+        border: 5px solid #294900d5;
+        box-shadow: inset 0 0 10px rgba(41, 73, 0, 0.7);
     }
     p {
         font-size: 12px;
@@ -109,8 +108,10 @@ html, body {
 }
 
 .deets {
-    width: 60%;
-    font-size: 10px;
+    width: 80%;
+    h2 {
+        margin: 0;
+    }
 }
 
 .contacts {
@@ -132,6 +133,9 @@ html, body {
     border-radius: 10px;
     padding: 2%;
     margin: 2% 0;
+    h2 {
+        font-size: 20px;
+    }
 
 }
 
@@ -139,17 +143,18 @@ html, body {
     list-style-type: none;
     padding: 0;
     li {
-        background-color: rgba(31, 70, 0, 0.5);
+        background-color: rgba(153, 201, 99, 0.733);
         border-left: white solid 2px;
         margin: 5px 0;
         text-align: left;
         padding-left: 10px;
         padding-right: 10px;
         font-size: 13px;
+        border-radius: 0 10px 10px 0;
     }
 
     a {
-        color: aquamarine;
+        color: #acff41;
     }
 }
 
@@ -163,12 +168,9 @@ html, body {
 
 .sectionTitle {
     background-color: #294900d5;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
     width: 100%;
-    margin: 2% 0;
     border-radius: 5px;
+    margin: 0;
 }
 
 
@@ -180,7 +182,8 @@ html, body {
 .Education_section {
     background-color: rgba(123,123,123,0.3);
     padding: 2%;
-    margin: 5% 0;
+    margin: 5%;
+    margin-top: 1%;
     border-radius: 10px;
     text-align: center;
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
@@ -208,10 +211,9 @@ html, body {
     }
 
 .Education_section .card:hover {
-        background: rgba(31, 70, 0, 0.5);
+        background: rgba(32, 70, 0, 0.911);
         transform: scale(1.05);
-        transition: transform 0.3s ease;
-        cursor: pointer;
+        transition: 0.4s ease-in-out;
     }
 
 
@@ -221,10 +223,11 @@ html, body {
 
 /* PROJECTS SECTION */
 .Projects_section {
-    background-color: #4e8a004b;
+    background-color: rgba(123,123,123,0.3);
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
     padding: 2%;
-    margin: 5% 0;
+    margin: 5%;
+    margin-top: 1%;
     border-radius: 10px;
     text-align: center;
 }
@@ -238,17 +241,25 @@ html, body {
         margin: 5px 0;
         text-align: left;
         padding-left: 10px;
+        border-radius: 0 10px 10px 0;
     }
+}
+
+.Projects_section ul li:hover {
+    background-color: rgba(31, 70, 0, 0.9);
+    transform: scale(1.10);
+    transition: 0.4s ease-in-out;
 }
 
 
 
 
 .skills_section {
-    background-color: #4e8a004b;
+    background-color: rgba(123,123,123,0.3);
     box-shadow: inset 0 0 10px rgba(0, 117, 82, 0.7);
     padding: 2%;
-    margin: 5% 0;
+    margin: 5%;
+    margin-top: 1%;
     border-radius: 10px;
     text-align: center;
     
@@ -257,29 +268,188 @@ html, body {
 .skills_section .skill_cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-    gap: 10px;
-    /* margin: 0; */
-    padding: 0;
+    gap: 10px;;
     div {
         background-color: rgba(31, 70, 0, 0.5);
         border-left: white solid 2px;
-        padding-left: 7px;
+        padding-left: 10px;
         padding-right: 10px;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     img {
         width: 70px;
         height: 70px;
     }
+
+    p {
+        display: none;
+    }
 }
 
+.skills_section .skill_cards div:hover {
+    background-color: rgba(31, 70, 0, 0.9);
+    transform: scale(1.10);
+    transition: 0.5s ease;
+    p {
+        display: block;
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+    }
+    
+}
 
 
 
 footer {
     background-color: #2949009a;
     text-align: center;
-    padding: 3px;
+    padding: 1px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    p {
+        margin: 5px 0;
+    }
 
+
+}
+
+
+
+
+
+/* FOR LAPTOP AND DESKTOP SCREENS */
+@media only screen and (min-width: 1623px) {
+
+    html, body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .header {
+        font-size: 13px;
+    } 
+    
+    main {
+        flex: 1;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+
+    .Profile {
+        width: 60%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 50px;
+        .pfp {
+            width: 150px;
+            height: 150px;
+        }
+        p {
+            margin-top: 0;
+            font-size: 15px;
+        }
+
+    }
+
+
+    .deets {
+        width: 70%;
+        font-size: 20px;
+        h1 {
+            margin: 0;
+        }
+    }
+
+    
+    
+    .contacts a img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px
+    }
+
+    .details {
+        width: 80%;
+        padding: 3%;
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .details .email_address ul {
+        li {
+            font-size: 17px;
+        }
+    }
+
+    .sectionTitle {
+        width: 100%;
+        border-radius: 5px;
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .Education_section {
+        margin-top: 1%;
+    }
+    .Projects_section {
+        margin-top: 1%;
+    }   
+    .skills_section {
+        margin-top: 1%;
+    }
+
+    .Education_section .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+            
+    }
+
+    .Education_section .card {
+        width: 90%;
+        height: 150px;
+    }
+
+    .skills_section .skill_cards{
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .desktop_purpose {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        div {
+            width: 50%;
+        }
+    }
+
+    footer {
+        position: fixed;
+    }
+}
+
+
+
+/* FOR TABLET SCREENS */
+@media only screen and (min-width: 768px) and (max-width: 1622px) {
+    /* Tablet-specific styles */
 }
