@@ -356,7 +356,7 @@ footer {
 
 
 /* FOR LAPTOP AND DESKTOP SCREENS */
-@media only screen and (min-width: 1623px) {
+@media only screen and (min-width: 1600px) {
     main {
         flex: 1;
     }
@@ -507,6 +507,157 @@ footer {
 
 
 /* FOR TABLET SCREENS */
-@media only screen and (min-width: 768px) and (max-width: 1622px) {
+@media only screen and (min-width: 768px) and (max-width: 1599px) {
     /* Tablet-specific styles */
+
+    .first-layer {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .about_section {
+        p {
+            font-size: 11px;
+        }
+        h3 {
+            padding: 0;
+        }
+    }
+
+    .about {
+        width: 30%;
+    }
+    html, body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: auto 0;
+    }
+
+
+    .Profile {
+        width: 80%;
+        height: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        .pfp {
+            width: 100px;
+            height: 100px;
+        }
+        p {
+            font-size: 15px;
+        }
+
+    }
+
+    .details {
+        width: 90%;
+        padding: 3%;
+        h2 {
+            margin: 0;
+        }
+    }
+
+    .details .email_address ul {
+        li {
+            font-size: 12px;
+        }
+    }
+
+    .deets {
+        width: 80%;
+        font-size: 15px;
+        h1 {
+            margin: 0;
+        }
+    }
+
+
+    .sectionTitle {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .Education_section {
+        margin-top: 1%;
+    }
+    .Projects_section {
+        margin-top: 1%;
+    }   
+    .skills_section {
+        margin-top: 1%;
+    }
+
+    .Education_section .card-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        height: 14%;
+        padding: 2%;
+            
+    }
+
+    .Education_section .card {
+        width: 90%;
+        font-size: x-small;
+    }
+
+
+    .Projects_section {
+        font-size: smaller;
+    }
+
+    .Projects_section ul {
+        padding: 0 2%;
+    }
+
+    .Projects_section ul li {
+        p {
+            font-size: 11px;
+        }
+    }
+
+    .skills_section .skill_cards{
+        width: 80%;
+        gap: 10px;
+        margin: auto;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 3fr));
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+    }
+
+    .skills_section .skill_cards div {
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+
+    .desktop_purpose {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        div {
+            width: 50%;
+        }
+    }
 }
