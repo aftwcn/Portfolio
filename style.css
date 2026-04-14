@@ -298,13 +298,11 @@ html, body {
 
 .skills_section .skill_cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
-    gap: 10px;;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 20px;
     div {
         background-color: rgba(31, 70, 0, 0.5);
         border-left: white solid 2px;
-        padding-left: 10px;
-        padding-right: 10px;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -359,7 +357,9 @@ footer {
 
 /* FOR LAPTOP AND DESKTOP SCREENS */
 @media only screen and (min-width: 1623px) {
-
+    main {
+        flex: 1;
+    }
     .first-layer {
         flex-direction: row;
         justify-content: space-between;
@@ -476,7 +476,12 @@ footer {
 
     .skills_section .skill_cards{
         width: 80%;
+        gap: 10px;
         margin: auto;
+    }
+
+    .skills_section .skill_cards div {
+        width: 100%;
     }
 
 
@@ -493,7 +498,9 @@ footer {
     }
 
     footer {
-        position: fixed;
+        position: relative;
+        bottom: 0;
+        left: 0;
     }
 }
 
