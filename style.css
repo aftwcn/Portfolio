@@ -149,6 +149,14 @@ html, body {
     height: 50px
 }
 
+.contacts a img:hover {
+    transform: scale(1.10);
+    transition: 0.4s ease;
+}
+.contacts a img:active {
+    transform: scale(0.88);
+}
+
 .details {
     background: rgba(31, 70, 0, 0.5);
     border-radius: 10px;
@@ -240,7 +248,7 @@ html, body {
 .Education_section .card:hover {
         background: rgba(32, 70, 0, 0.911);
         transform: scale(1.05);
-        transition: 0.4s ease-in-out;
+        transition: 0.4s ease;
     }
 
 
@@ -279,9 +287,14 @@ html, body {
 .Projects_section ul li:hover {
     background-color: rgba(31, 70, 0, 0.9);
     transform: scale(1.10);
-    transition: 0.4s ease-in-out;
+    transition: 0.4s ease;
 }
 
+.Projects_section ul li img:active {
+    transform: scale(0.7);
+    border:2px solid rgb(177, 255, 196);
+    border-radius: 50%;
+}
 
 
 
